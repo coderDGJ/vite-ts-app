@@ -41,7 +41,7 @@ function initData(){
 function onScroll() {
   const scrollTop = viewBoxRef.value!.scrollTop
   // 判断触底防止抖动
-  if (scrollTop >= (data.dataList.length - data.rowNum) * data.rowHeigth) return
+  if (scrollTop > data.dataList.length * data.rowHeigth - data.viewHeight) return
   // 复制截取节点
   data.start = Math.round(scrollTop / data.rowHeigth)
   data.end = data.start + data.rowNum
