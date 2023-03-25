@@ -32,6 +32,11 @@ const routes = [
     path: '/optimize',
     name: 'optimize',
     component: () => import('@/views/optimize/index.vue'),
+  },
+  {
+    path: '/bigFileUpload',
+    name: 'bigFileUpload',
+    component: () => import('@/views/bigFileUpload/index.vue'),
   }
 ]
 const addroute= [
