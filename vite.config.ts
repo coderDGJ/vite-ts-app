@@ -30,7 +30,7 @@ export default defineConfig(({command ,mode})=>{
         }
       },
       build:{
-        minify:false, //打包不乱骂
+        minify:false, //打包不乱码
         rollupOptions:{
         output:{
           assetFileNames:"[hash].[name].[ext]",

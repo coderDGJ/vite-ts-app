@@ -30,14 +30,25 @@ const routes = [
   },
   {
     path: '/optimize',
-    name: 'optimize',
+    name: '虚拟列表',
     component: () => import('@/views/optimize/index.vue'),
   },
   {
     path: '/bigFileUpload',
-    name: 'bigFileUpload',
+    name: '大文件上传',
     component: () => import('@/views/bigFileUpload/index.vue'),
-  }
+  },
+  {
+    path: '/imgLazyLoad',
+    name: 'imgLazyLoad',
+    component: () => import('@/views/imgLazyLoad/index.vue'),
+  },
+  {
+    path: '/PdfToCanvers',
+    name: 'PdfToCanvers',
+    component: () => import('@/views/PdfToCanvers/index.vue'),
+  },
+  
 ]
 const addroute= [
   {

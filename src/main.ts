@@ -14,6 +14,9 @@ declare module 'vue' {
         $bus : typeof mitt
     }
  }
+ app.config.errorHandler = (error, vm, info) => {
+    console.log(error , vm , info , '监听错误')
+ }
 app.config.globalProperties.$bus = mitt
 app.config.globalProperties.custom = '自定义'
 app.use(createPinia())

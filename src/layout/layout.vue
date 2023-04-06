@@ -23,7 +23,8 @@ const routeList = router.options.routes.filter(item => !item.redirect)
           <span>{{item.name}}</span>
             </el-menu-item>
           </div>
-      </el-menu></el-aside>
+        </el-menu>
+      Ï</el-aside>
         <el-main>
           <RouterView/>
         </el-main>
