@@ -44,6 +44,6 @@ export default defineConfig(({command ,mode})=>{
         },
         emptyOutDir:true, //打包之前清空文件夹
         chunkSizeWarningLimit: 1500000,
-      }
+      },
     }
   })

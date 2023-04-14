@@ -7,6 +7,7 @@ import router from './router'
 import 'virtual:windi.css'
 import './style/base.less'
 import mittBus from 'mitt'
+import { lazy } from './directives/index'
 const app = createApp(App)
 const mitt = mittBus()
 declare module 'vue' {
@@ -19,6 +20,7 @@ declare module 'vue' {
  }
 app.config.globalProperties.$bus = mitt
 app.config.globalProperties.custom = '自定义'
+app.directive('lazy',lazy)
 app.use(createPinia())
 app.use(ElementPlus)
 app.use(router)

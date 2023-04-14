@@ -47,7 +47,11 @@ const routes = [
     path: '/PdfToCanvers',
     name: 'PdfToCanvers',
     component: () => import('@/views/PdfToCanvers/index.vue'),
-  },
+  }, {
+    path: '/calendar',
+    name: 'calendar',
+    component: () => import('@/views/calendar/index.vue'),
+  }
   
 ]
 const addroute= [
